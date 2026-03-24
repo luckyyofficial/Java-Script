@@ -1,9 +1,7 @@
 # 📜 JavaScript Notes Repository
 
 <p align="center">
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-    <img src="img/javascript.svg" alt="JavaScript Badge" width="100"/>
-  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="img/js.svg" alt="JavaScript Badge" width="100"/></a>
 </p>
 
 Welcome to the **JavaScript Notes Repository**, a well-organized resource created to help learners understand and master the logic and interactivity of **JavaScript (JS)** — the language of the modern web.
@@ -14,7 +12,7 @@ Welcome to the **JavaScript Notes Repository**, a well-organized resource create
 This repository contains **concise**, **clear**, and **practical** JavaScript notes. It covers everything from basic syntax to asynchronous programming. Whether you're just starting with variables or diving into Promises, these notes aim to boost your scripting skills.
 
 <div align="center">
-  <img src="img/js_logo.svg" width="120">
+  <img src="img/js.svg" width="120">
 </div>
 
 ---
