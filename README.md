@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript Badge" width="100"/>
+    <img src="img/javascript.svg" alt="JavaScript Badge" width="100"/>
   </a>
 </p>
 
@@ -14,7 +14,7 @@ Welcome to the **JavaScript Notes Repository**, a well-organized resource create
 This repository contains **concise**, **clear**, and **practical** JavaScript notes. It covers everything from basic syntax to asynchronous programming. Whether you're just starting with variables or diving into Promises, these notes aim to boost your scripting skills.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/abrahamcalf/programming-languages-logos/master/src/javascript/javascript.svg" width="120">
+  <img src="img/js_logo.svg" width="120">
 </div>
 
 ---
@@ -59,7 +59,7 @@ This repository contains **concise**, **clear**, and **practical** JavaScript no
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Made%20for-Developers-yellow?style=for-the-badge" />
+  <img src="img/made_for_dev.svg" />
 </p>
 
 <p align="center">⚡ Happy Coding! 🚀</p>
