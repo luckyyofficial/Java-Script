@@ -21,19 +21,19 @@ This repository contains **concise**, **clear**, and **practical** JavaScript no
 
 <table align="center">
   <tr>
-    <td>⚙️ Variables, Data Types & Operators</td>
-    <td>🔄 Loops, Conditions & Logic</td>
-  </tr>
-  <tr>
-    <td>📦 Functions, Scope & Closures</td>
-    <td>🗂️ Arrays & Object Manipulation</td>
-  </tr>
-  <tr>
-    <td>🌐 DOM Manipulation & Events</td>
-    <td>⏳ Promises, Async/Await & APIs</td>
-  </tr>
-</table>
-
+    <td>⚙️ Variables, Data Types & Operators</td>  
+    <td>🔄 Loops, Conditions & Logic</td> 
+  </tr> 
+  <tr> 
+    <td>📦 Functions, Scope & Closures</td> 
+    <td>🗂️ Arrays & Object Manipulation</td> 
+  </tr> 
+  <tr> 
+    <td>🌐 DOM Manipulation & Events</td> 
+    <td>⏳ Promises, Async/Await & APIs</td> 
+  </tr> 
+</table> 
+ 
 ---
 
 ## 🎯 Purpose  
