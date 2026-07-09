@@ -25,12 +25,12 @@ This repository contains **concise**, **clear**, and **practical** JavaScript no
     <td>🔄 Loops, Conditions & Logic</td>  
   </tr>  
   <tr>  
-    <td>📦 Functions, Scope & Closures</td> 
-    <td>🗂️ Arrays & Object Manipulation</td> 
-  </tr> 
-  <tr> 
-    <td>🌐 DOM Manipulation & Events</td> 
-    <td>⏳ Promises, Async/Await & APIs</td> 
+    <td>📦 Functions, Scope & Closures</td>   
+    <td>🗂️ Arrays & Object Manipulation</td>   
+  </tr>   
+  <tr>   
+    <td>🌐 DOM Manipulation & Events</td>   
+    <td>⏳ Promises, Async/Await & APIs</td>   
   </tr> 
 </table> 
  
