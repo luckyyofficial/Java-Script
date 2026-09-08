@@ -515,6 +515,57 @@
     // Loops 
     // Used to execute piece of code again & again .
 
+    // There are 3 loops in js , as given below :
+
+    {
+    // 1. FOR LOOP
+    // For Loop: Used to run a block of code a specific, known number of times.
+
+    for (let i = 1; i <= 3; i++) {
+        console.log("For loop count: " + i); // runs 3 times (1, 2, 3)
+    }
+
+    // The for loop simply includes:
+    //                   1. Initialization (let i = 1) -> where to start.
+    //                   2. Condition (i <= 3) -> when to stop.
+    //                   3. Increment (i++) -> how to move forward each round.
+    // Best used when you already know beforehand how many times you want to repeat something.
+    }
+
+    {
+    // 2. WHILE LOOP
+    // While Loop: Used to run a block of code as long as a specific condition remains true.
+
+    let count = 1; // declared a starting point outside the loop
+
+    while (count <= 3) {
+        console.log("While loop count: " + count);
+        count++; // increments count so the loop eventually stops (otherwise it becomes an infinite loop!)
+    }
+
+    // The while loop simply includes:
+    //                   1. Starting point defined outside.
+    //                   2. Condition checked BEFORE running the code inside.
+    // Best used when you don't know the exact count in advance, but you know the stopping condition.
+    }
+
+    {
+    // 3. DO...WHILE LOOP
+    // Do...While Loop: Similar to a while loop, but it guarantees the code runs AT LEAST ONCE.
+
+    let number = 1;
+
+    do {
+        console.log("Do-while number is: " + number);
+        number++;
+    } while (number <= 3);
+
+    // The do...while loop simply includes:
+    //                   1. Running the code block FIRST.
+    //                   2. Checking the condition AFTERWARDS.
+    // Best used when you want the code inside to execute at least one time no matter what.
+    }
+
     
 
 
