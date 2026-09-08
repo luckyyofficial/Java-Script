@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Notes</title>
+</head>
+<body> 
+     <!-- HTML , CSS & Java Script code notes - with examples   -->
+
+     <!-- 1. Alerts-->
+
+     <script>
+         alert("Hello, World!"); 
+        //  Alert code is used to display a message in a dialog box. It is often used for debugging or to provide information to the user.
+     </script>. 
+
+     <!-- 2. Console Logs -->
+
+     <script>
+         console.log("Hello, World!");
+         //  Console log is used to display information in the browser's console. It is often used for debugging purposes.
+     </script>
+
+     <!-- 3. Variables -->. 
+
+     <script>
+         name = "Lucky";
+         age = 21;
+         //  Variables are used to store data values.
+     </script>
+
+     <!-- 4. Null data type in js -->
+     <script>
+         nullValue = null;
+         //  Null is a special value that represents the absence of a value. But it is not the same as undefined. 
+         // Null is an assignment value, while undefined means a variable has been declared but has not yet been assigned a value.
+     </script>
+
+     <!-- 5. Boolean data type in js -->
+     <script>
+         isTrue = true;
+         isFalse = false;
+         //  Boolean values are either true or false. Used to represent logical values and are often used in conditional statements.
+     </script>
+
+     <!-- 6. 3 ways to define variables in java script -->
+     <script>
+        
+        // 1. Using var keyword
+        
+        var variable1 = "value1";
+        // Values can be changed and updated using var keyword. It is function-scoped, meaning it is accessible within the function it is defined in.
+        // can't be declared again within the same function or block scope. It can be re-declared and updated within the same function or block scope.
+        
+        // 2. Using let keyword
+        
+         let variable2 = "value2";
+        // Values can be changed and updated using let keyword. It is block-scoped, meaning it is only accessible within the block it is defined in.
+        // can't be declared again within the same block scope. It can be updated but not re-declared within the same block scope.
+        
+        // 3. Using const keyword
+        
+        const variable3 = "value3";
+        // Values cannot be changed or updated using const keyword. It is block-scoped, meaning it is only accessible within the block it is defined in.
+        // can't be declared again within the same block scope. It cannot be updated or re-declared within the same block scope.
+        
+        //  The var keyword is function-scoped, while let and const are block-scoped 
+     
+     </script>
+
+     <!-- Objects in JavaScript -->
+     
+     <script>
+         const person = {  // here we are creating an object called person using the const keyword. 
+         // The object has three properties: firstName, lastName, and age.
+             firstName: "John",
+             lastName: "Doe",
+             age: 30
+         };
+         person["firstName"] = "Jane"; // here we are changing the value of the firstName property from John to Jane using bracket notation.
+         person.age = 31; // here we are changing the value of the age property from 30 to 31 using dot notation.
+         
+         console.log(person); //  used to display the entire object in the console.
+         console.log(person.firstName); // used to display the value of the firstName property in the console.
+         console.log(person.lastName); // used to display the value of the lastName property in the console.
+         console.log(person.age); // used to display the value of the age property in the console.
+     
+     </script> 
+
+     <script>
+
+        // Operators in JavaScript
+        // Used to perform operations on variables and values. 
+        // There are different types of operators in JavaScript, including arithmetic, assignment, comparison, logical, and more.
+
+        // Modulus operator (%)
+        let x = 10;
+        let y = 3;
+        let result = x % y; //  The modulus operator returns the remainder of a division
+        console.log(result); //  Output: 1
+
+        // Exponentiation operator (**)
+        let base = 2;
+        let exponent = 3;
+        let power = base ** exponent; //  The exponentiation operator raises the base to the power of the exponent ( a ** b = a raised to the power of b)
+        console.log(power); //  Output: 8
+
+        // Increment operator (++)
+        let num = 5;
+        
+        console.log(+num);
+        console.log(num++);
+        console.log(++num);
+
+        // Increment operator (++)
+        let numb = 5;
+        
+        console.log(-numb);
+        console.log(numb--);
+        console.log(--numb);
+     
+     </script>
+  
+     <script>
+
+    // JavaScript Assignment Operators
+    // Used to assign values to variables
+ 
+    // 1. Basic Assignment (=)
+    
+    let a = 10;
+    console.log("= :", a); // Output: 10
+
+    // 2. Addition Assignment (+=) -> a = a + 5
+    let b = 10;
+    b += 5;
+    console.log("+= :", b); // Output: 15
+
+    // 3. Subtraction Assignment (-=) -> c = c - 4
+    let c = 10;
+    c -= 4;
+    console.log("-= :", c); // Output: 6
+
+    // 4. Multiplication Assignment (*=) -> d = d * 3
+    let d = 10;
+    d *= 3;
+    console.log("*= :", d); // Output: 30
+
+    // 5. Remainder / Modulus Assignment (%=) -> e = e % 3
+    let e = 10;
+    e %= 3;
+    console.log("%= :", e); // Output: 1
+
+    // 6. Exponentiation Assignment (**=) -> f = f ** 3
+    let f = 2;
+    f **= 3;
+    console.log("**= :", f); // Output: 8
+
+    </script>
+
+    <script>
+
+{
+
+    // Comparison Operators
+
+    // == : This ' == ' sign in js is used to compare 2 numbers , they are equal or not .
+
+    // ==========================================
+    // Equality Operator (==) in JavaScript
+    // Compares two values to check if they are equal
+    // Returns true if equal, false if not
+    // Note: It converts types automatically if they differ (loose equality)
+    // ==========================================
+
+    // 1. Comparing equal numbers
+    let a = 10;
+    let b = 10;
+    console.log(a == b); // Output: true
+
+    // 2. Comparing different numbers
+    let x = 10;
+    let y = 5;
+    console.log(x == y); // Output: false
+
+    // 3. Loose equality (number vs string number)
+    let num = 10;
+    let str = "10";
+    console.log(num == str); // Output: true (values match after type conversion)
+  
+    // 4. Using in an if condition
+    let score = 50;
+    if (score == 50) {
+    console.log("You passed!"); // Output: You passed!
+    
+    }
+
+    // ==========================================
+    // Comparison Operators in JavaScript
+    // Used to compare two values and return a boolean (true or false)
+    // ==========================================
+ 
+    // ------------------------------------------
+    // 1. Strict Equality (===)
+    // Compares both value AND data type (no type conversion)
+    // ------------------------------------------
+    
+    let num1 = 10;
+    let num2 = 10;
+    let strNum = "10";
+
+    console.log(num1 === num2);   // Output: true  (same value and type)
+    console.log(num1 === strNum); // Output: false (different type: number vs string)
+
+
+    // ------------------------------------------
+    // 2. Inequality (!=) [Loose Inequality]
+    // Checks if two values are NOT equal (converts types if needed)
+    // ------------------------------------------
+    
+    let p = 10;
+    let q = 20;
+
+    console.log(p != q);    // Output: true  (10 is not equal to 20)
+    console.log(10 != "10"); // Output: false (values match after conversion)
+
+
+    // ------------------------------------------
+    // 3. Strict Inequality (!==)
+    // Checks if values OR types are NOT equal
+    // ------------------------------------------
+    
+    console.log(10 !== 20);   // Output: true  (values are different)
+    console.log(10 !== "10"); // Output: true  (types are different)
+    console.log(10 !== 10);   // Output: false (exact match in value and type)
+
+
+    // ------------------------------------------
+    // 4. Greater Than (>)
+    // Checks if the left value is greater than the right value
+    // ------------------------------------------
+    
+    let age = 18;
+
+    console.log(age > 15); // Output: true
+    console.log(age > 20); // Output: false
+    console.log(age > 18); // Output: false (it is equal, not strictly greater)
+
+
+    // ------------------------------------------ 
+    // 5. Less Than (<)
+    // Checks if the left value is smaller than the right value
+    // ------------------------------------------
+    let speed = 60;
+
+    console.log(speed < 80); // Output: true
+    console.log(speed < 40); // Output: false
+    console.log(speed < 60); // Output: false (it is equal, not strictly less)
+
+
+    // ------------------------------------------
+    // 6. Greater Than or Equal To (>=)
+    // Checks if the left value is greater than OR equal to the right value
+    // ------------------------------------------
+      
+    let passingScore = 40;
+
+    console.log(passingScore >= 40); // Output: true  (matches the equal condition)
+    console.log(passingScore >= 50); // Output: false
+    console.log(passingScore >= 35); // Output: true
+
+
+    // ------------------------------------------
+    // 7. Less Than or Equal To (<=)
+    // Checks if the left value is less than OR equal to the right value
+    // ------------------------------------------
+    
+    let balance = 100;
+
+    console.log(balance <= 100); // Output: true  (matches the equal condition)
+    console.log(balance <= 150); // Output: true 
+    console.log(balance <= 50);  // Output: false
+
+
+}
+
+    </script>
+
+    <script>
+
+    // JAVASCRIPT LOGICAL OPERATORS
+
+    // 1. LOGICAL AND (&&) : Only gives the true outout if all given situation triggers , 
+    // even if 1 will not match the equation it simple give a false output
+    
+    </script>
+
+    <script>
+    {
+
+    a = 6; // declare a variable with a value of 6
+    b = 5; // declare b variable with a value of 5
+        
+    let cond1 = a > b; //true : because a that is 6 is greater than b that is 5 .
+    let cond2 = a === 6; // true : a that is 6 is equal to number 6 .
+    console.log(cond1 && cond2); // It will execute and give output as true because 
+                                 // both the situation in both variable are true
+                                 // Even one of the situation doesn't fullfill the requirement the criteria then it will give the output as false
+                                 
+                                }
+    // Example of false output
+        {
+
+    a = 6; // declare a variable with a value of 6
+    b = 5; // declare b variable with a value of 5
+        
+    let cond1 = a > b; //true : because a that is 6 is greater than b that is 5 .
+    let cond2 = a === 5; // false : a that is 6 is not equal to number 6 .
+    console.log(cond1 && cond2); 
+
+        }
+    </script>
+
+
+
+    <script>
+    
+    // 2. LOGICAL OR (||)
+    // Just like the , AND operator that gives us output as true only if both the situations are true .
+    // This also works as same but here the thing that changed is that it will give true as a output even if only one of the situation is true
+    // In simple words it doesn't require both the situations to be true , it only needs one of them to fullfill it's requirement and it will give true . 
+
+    {
+        let a = 2; // decalared a variable named a with a value of 2
+        let b = 3; // decalared a variable named a with a value of 2
+
+        console.log(a > b || b === a ); // || : sign of Logical OR comparison .
+                                        // Here  this OR means that even if one of the both situation fullfill the requirements than it will give true .
+                                        // And , here 
+                                                     // the first situation is true that is a is greater than b .
+                                                     // the second situation is false that b is equal to the a .
+                                                     // But it will print it as true because first one is trie and it only requires one of them to be true .
+        // Here , for a false example also we can take a case of false situation .
+        let y = 2; // declared a variable named y with a value of 2
+        let z = 3; // declared a variable named z with a value of 3
+        
+        console.log( y > z || z === y );
+                                         // the first situation is false that is y is not greater than z .
+                                         // the second situation is also false that z is equal to the y .
+                                         // And here it will give false output cauz none of the situation is true .
+    }
+
+    // 3. LOGICAL NOT (!)
+    // Logical NOT 9 ( ! ) : Used in js to get a opposite output 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 4. NULLISH COALESCING (??)
+// Fallback triggered ONLY by `null` or `undefined` (keeps 0, false, "").
+const userScore = 0;
+console.log(userScore || 50);       // 50 (treats 0 as absent)
+console.log(userScore ?? 50);       // 0  (correctly retains 0)
+
+const emptyInput = "";
+console.log(emptyInput ?? "N/A");   // "" (keeps empty string)
+console.log(null ?? "Fallback");    // "Fallback"
+console.log(undefined ?? "Def");    // "Def"
+ 
+
+// 5. LOGICAL ASSIGNMENT OPERATORS (ES2021+)
+// &&= : assigns if LHS is truthy
+// ||= : assigns if LHS is falsy
+// ??= : assigns if LHS is null or undefined
+
+const settings = {
+  maxAttempts: 0,
+  timeout: null,
+  active: false
+};
+
+settings.maxAttempts ??= 5;         // Remains 0 (0 is not nullish)
+settings.timeout ??= 3000;          // Becomes 3000 (was null)
+settings.active &&= true;           // Remains false (LHS is not truthy)
+
+
+// 6. OPERATOR PRECEDENCE & SYNTAX RULES
+// Priority: ! (highest) -> && -> || and ?? (lowest)
+const flag = false && true || true; // ((false && true) || true) -> true
+
+// Cannot chain ?? directly with && or || without parentheses:
+// const invalid = a || b ?? c;     // SyntaxError
+const valid = (false || null) ?? "OK"; // "OK"
+
+
+
+
+
+    </script>
+     
+
+
+
+
+
+
+  
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
