@@ -352,6 +352,30 @@
     // 3. LOGICAL NOT (!)
     // Logical NOT 9 ( ! ) : Used in js to get a opposite output 
 
+    {
+        let a = 2; // decalared a variable named a with a value of 2
+        let b = 3; // decalared a variable named a with a value of 2
+
+        console.log( !(a > b) || !(b === a) ); // Here it should give false as a output because none of the situations are trigger here but ; 
+                                               //  It will give the true output because of the ! sign that we used in this scenario .
+                                               // Which gives this code a command to give opposite output .
+        // Here we can take an another example of it that will give opposite output than the condition .
+
+        let y = 2; // declared a variable named y with a value of 2
+        let z = 3; // declared a variable named z with a value of 3
+        
+        console.log( !(y > z) || !(z === y) );
+                                         
+        
+    }
+
+    
+
+
+
+
+
+    // 4. NULLISH COALESCING (??)
 
 
 
@@ -367,16 +391,8 @@
 
 
 
-// 4. NULLISH COALESCING (??)
-// Fallback triggered ONLY by `null` or `undefined` (keeps 0, false, "").
-const userScore = 0;
-console.log(userScore || 50);       // 50 (treats 0 as absent)
-console.log(userScore ?? 50);       // 0  (correctly retains 0)
 
-const emptyInput = "";
-console.log(emptyInput ?? "N/A");   // "" (keeps empty string)
-console.log(null ?? "Fallback");    // "Fallback"
-console.log(undefined ?? "Def");    // "Def"
+
  
 
 // 5. LOGICAL ASSIGNMENT OPERATORS (ES2021+)
