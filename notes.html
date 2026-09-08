@@ -367,17 +367,43 @@
         let z = 3; // declared a variable named z with a value of 3
         
         console.log( !(y > z) || !(z === y) );
-                                         
-        
+                                                 
     }
+
+    // Conditional Statements 
+    // Used to implement some conditions in the code .
+    // Used by giving situations and conditions like If .
+
+    // Let's take an example of if statements .
+    
+    {
+        let age = 12; // Create a variabe named age with a value of 12
+                      // Here this value will clarify the age of the user 
+
+        if ( age >= 18 ) // Here , the condition is that if the age of the user is equal or above the number 18 than ,
+                         // It will give output as written below in console.log code .  
+        {
+            console.log("You are eligible for vote");
+        }
+        if ( age <= 17  )// Here , the condition is that if the age of the user is equal or below the number 18 than ,
+                         // It will give output as written below in console.log code .
+        {
+            console.log("You are not eligible for vote"); 
+        }
+        // And also here the age of the user is given as 12 .
+        // So clearly the user is not eligible for vote so it will execute and print the second log .
+        
+        // Just like this only we can write as much as if statements as we want no matter what the number is 
+        // And , if any of the statements will trigger than the log will print 
+        // But if none of them will trigger than it will print nothing . 
+    }
+
 
     
 
 
 
 
-
-    // 4. NULLISH COALESCING (??)
 
 
 
@@ -396,30 +422,6 @@
 
 
  
-
-// 5. LOGICAL ASSIGNMENT OPERATORS (ES2021+)
-// &&= : assigns if LHS is truthy
-// ||= : assigns if LHS is falsy
-// ??= : assigns if LHS is null or undefined
-
-const settings = {
-  maxAttempts: 0,
-  timeout: null,
-  active: false
-};
-
-settings.maxAttempts ??= 5;         // Remains 0 (0 is not nullish)
-settings.timeout ??= 3000;          // Becomes 3000 (was null)
-settings.active &&= true;           // Remains false (LHS is not truthy)
-
-
-// 6. OPERATOR PRECEDENCE & SYNTAX RULES
-// Priority: ! (highest) -> && -> || and ?? (lowest)
-const flag = false && true || true; // ((false && true) || true) -> true
-
-// Cannot chain ?? directly with && or || without parentheses:
-// const invalid = a || b ?? c;     // SyntaxError
-const valid = (false || null) ?? "OK"; // "OK"
 
 
 
