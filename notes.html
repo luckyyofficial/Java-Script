@@ -479,6 +479,39 @@
         // It can be used to execute conditional statements fast and simple but only if we have 2 conditions not more than that .
     }
 
+    // 4. SWITCH STATEMENT
+    // Switch Statement: Used to run different blocks of code based on matching cases.
+    // It's a clean alternative when you have many "else if" conditions checking the same variable.
+
+    {
+
+    let day = 3; // declared a variable named day with a value of 3
+
+    switch (day) {
+        case 1:
+            console.log("Monday");
+            break; // break stops the switch so it doesn't run the rest of the cases
+        case 2:
+            console.log("Tuesday");
+            break;
+        case 3:
+            console.log("Wednesday"); // This will print because day is 3
+            break;
+        case 4:
+            console.log("Thursday");
+            break;
+        default:
+            console.log("Invalid day"); // Runs if none of the above cases match (like an else statement)
+    }
+
+    // The upper statement is a switch statement way to execute multiple conditions easily.
+    // It simply checks:
+    //                   switch (variable) -> compares it against each case -> 
+    //                   runs the matching code -> uses break to exit -> 
+    //                   uses default if nothing matches.
+    // It is used to handle multiple specific conditions cleanly instead of writing a long chain of if-else statements.
+}
+
     
 
 
