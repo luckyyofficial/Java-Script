@@ -607,16 +607,16 @@
 
     let fruits = ["apple", "banana", "mango"]; // declared an array with multiple values
 
-    for (let fruit of fruits) {
+    for (let fruit of fruits) { 
         console.log(fruit); // prints each fruit one by one ("apple", then "banana", then "mango")
-    }
+    } 
 
     // The for...of loop simply includes:
     //                   1. A temporary variable (let fruit) -> holds the current item's value during each loop round.
     //                   2. The "of" keyword -> connects the variable to the collection.
     //                   3. The collection (fruits) -> the list or array you are looping through.
     // Best used when you only care about the values inside an array and don't want to mess with index numbers.
-
+ 
     {
     let str = "JavaScript";              // declared a variable named str with the text "JavaScript"
     let size = 0;                        // declared a counter variable named size starting at 0
@@ -625,7 +625,7 @@
         console.log("i=", i);            // prints the current letter that the loop is looking at
         size++;                          // adds 1 to the size counter for every letter it loops through
     }                                    // closes the loop block
-
+ 
     console.log("string size = ", size); // prints the final total count of letters after the loop finishes
 }
 
